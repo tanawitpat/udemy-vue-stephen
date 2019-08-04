@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>First Vue App</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="app" @mousemove="onMouseMove">
+            <h1>{{ title }}</h1>
+            <div :style="styleOne"></div>
+            <div :style="styleTwo"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
+<!-- 
+<html>
+    <head>
+        <title>First Vue App</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="app">
+            <h2>{{ title }}</h2>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html> -->
