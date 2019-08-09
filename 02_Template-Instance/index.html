@@ -2,16 +2,20 @@
     <head>
         <title>Template & Instance</title>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jdenticon@2.2.0" async></script>        
     </head>
     <body>
-        <h3>My Identicon Generator</h3>
         <div id="app">
-            Input:
-            <input v-on:input="onNewText"/>
+            <h3>My Identicon Generator</h3>
+            <div>
+                Input:
+                <input v-on:input="onInput"/>
+            </div>
+            <div>
+                Output:
+                <div v-html="identicon"></div>
+            </div>
+            <script src="app.js"></script>
         </div>
-        <div>
-            Output:
-        </div>
-        <script src="app.js"></script>
     </body>
 </html>
