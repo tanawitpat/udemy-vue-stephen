@@ -6,6 +6,9 @@ new Vue({
     computed: { // Turn data into viewable values
         identicon: function() {
             return jdenticon.toSvg(this.textInput, 200)
+        },
+        reverse: function() {
+            return this.textInput.split("").reverse().join("")
         }
     },
     methods: { // Use these function to change data
@@ -22,7 +25,8 @@ new Vue({
             </div>
             <div>
                 Output:
-                {{ textInput }}
+                {{ textInput.split("").reverse().join("") }}
+                {{ reverse }}
             </div>
             <script src="app.js"></script>
         </div>
