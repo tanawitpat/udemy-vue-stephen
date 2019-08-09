@@ -22,7 +22,7 @@ new Vue({
             </div>
             <div>
                 Output:
-                <div v-html="identicon"></div>
+                {{ textInput }}
             </div>
             <script src="app.js"></script>
         </div>
