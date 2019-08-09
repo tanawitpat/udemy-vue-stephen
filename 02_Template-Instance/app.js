@@ -12,5 +12,19 @@ new Vue({
         onInput: function(event) {
             this.textInput = event.target.value
         }
-    }
+    },
+    template: `
+        <div>
+            <h3>My Identicon Generator</h3>
+            <div>
+                Input:
+                <input v-on:input="onInput"/>
+            </div>
+            <div>
+                Output:
+                <div v-html="identicon"></div>
+            </div>
+            <script src="app.js"></script>
+        </div>
+    `
 })
