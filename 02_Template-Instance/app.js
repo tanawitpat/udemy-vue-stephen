@@ -28,7 +28,6 @@ new Vue({
                 {{ textInput.split("").reverse().join("") }}
                 {{ reverse }}
             </div>
-            <script src="app.js"></script>
         </div>
     `
 })
