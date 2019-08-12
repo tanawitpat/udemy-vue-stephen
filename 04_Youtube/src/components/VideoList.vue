@@ -1,16 +1,15 @@
 <template>
     <ul>
         VideoList
+        {{ videos.length }}
     </ul>
 </template>
 
 <script>
 export default {
     name: "VideoList",
-    methods: {
-        onInput: function(event) {
-            this.$emit("termChange", event.target.value)
-        }
+    props: {
+        videos: Array
     }
 }
 </script>
